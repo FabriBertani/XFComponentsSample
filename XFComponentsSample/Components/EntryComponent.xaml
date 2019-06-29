@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XFComponentsSample.Components.EntryComponent"
+    Orientation="Vertical">
+    <Label
+        x:Name="titleLabel"
+        FontSize="Medium"
+        FontAttributes="Italic"
+        TextColor="Black" />
+    <Entry
+        x:Name="entry"
+        HorizontalOptions="FillAndExpand"
+        FontSize="Small"
+        TextColor="Black"
+        PlaceholderColor="Gray" />
+    <Label
+        x:Name="errorLabel"
+        FontSize="Micro"
+        TextColor="Red"
+        IsVisible="false" />
+</StackLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:components="clr-namespace:XFComponentsSample.Components"
+    x:Class="XFComponentsSample.PageWithComponents"
+    Title="With Components">
+    <ScrollView>
+        <StackLayout
+            Padding="15">
+            <Label
+                Margin="15"
+                FontSize="Large"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Start"
+                FontAttributes="Bold"
+                Text="Page With Components" />
+            
+            <components:EntryComponent
+                x:Name="username"
+                TitleText="Username"
+                EntryPlaceholderText="Set your username here..."
+                EntryReturnType="Next"
+                ErrorText="Username is required" />
+            
+            <components:EntryComponent
+                x:Name="firstname"
+                TitleText="First Name"
+                EntryReturnType="Next"
+                EntryPlaceholderText="Set your first name here..."
+                ErrorText="First Name is required" />
+            
+            <components:EntryComponent
+                x:Name="lastname"
+                TitleText="Last Name"
+                EntryReturnType="Next"
+                EntryPlaceholderText="Set your last name here..."
+                ErrorText="Last Name is required" />
+            
+            <components:EntryComponent
+                x:Name="email"
+                TitleText="Email"
+                EntryReturnType="Next"
+                EntryPlaceholderText="Set your email here..."
+                EntryKeyboard="Email"
+                ErrorText="Email is required" />
+            
+            <components:EntryComponent
+                x:Name="password"
+                TitleText="Password"
+                EntryReturnType="Done"
+                EntryPlaceholderText="Set your password here..."
+                EntryKeyboard="Text"
+                IsPassword="true"
+                ErrorText="Password is required" />
+            
+            <Button
+                x:Name="registerbtn"
+                Margin="0, 15, 0, 0"
+                HeightRequest="40"
+                BackgroundColor="Blue"
+                FontAttributes="Bold"
+                TextColor="White"
+                Text="Register Account"
+                Clicked="HandleButtonClicked" />
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XFComponentsSample.PageWithoutComponents"
+    Title="Without Components">
+    <ScrollView>
+        <StackLayout
+            Padding="15">
+            <Label
+                Margin="15"
+                FontSize="Large"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Start"
+                FontAttributes="Bold"
+                Text="Page Without Components" />
+            
+            <StackLayout>
+                <Label
+                    FontSize="Medium"
+                    FontAttributes="Italic"
+                    TextColor="Black"
+                    Text="Username" />
+                <Entry
+                    x:Name="username"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="Small"
+                    TextColor="Black"
+                    ReturnType="Next"
+                    PlaceholderColor="Gray"
+                    Placeholder="Set your username here..." />
+                <Label
+                    x:Name="usernameError"
+                    FontSize="Micro"
+                    TextColor="Red"
+                    IsVisible="false"
+                    Text="Username is required" />
+            </StackLayout>
+            
+            <StackLayout>
+                <Label
+                    FontSize="Medium"
+                    FontAttributes="Italic"
+                    TextColor="Black"
+                    Text="First Name" />
+                <Entry
+                    x:Name="firstname"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="Small"
+                    TextColor="Black"
+                    ReturnType="Next"
+                    PlaceholderColor="Gray"
+                    Placeholder="Set your first name here..." />
+                <Label
+                    x:Name="firstnameError"
+                    FontSize="Micro"
+                    TextColor="Red"
+                    IsVisible="false"
+                    Text="First Name is required" />
+            </StackLayout>
+            
+            <StackLayout>
+                <Label
+                    FontSize="Medium"
+                    FontAttributes="Italic"
+                    TextColor="Black"
+                    Text="Last Name" />
+                <Entry
+                    x:Name="lastname"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="Small"
+                    TextColor="Black"
+                    ReturnType="Next"
+                    PlaceholderColor="Gray"
+                    Placeholder="Set your last name here..." />
+                <Label
+                    x:Name="lastnameError"
+                    FontSize="Micro"
+                    TextColor="Red"
+                    IsVisible="false"
+                    Text="Last Name is required" />
+            </StackLayout>
+            
+            <StackLayout>
+                <Label
+                    FontSize="Medium"
+                    FontAttributes="Italic"
+                    TextColor="Black"
+                    Text="Email" />
+                <Entry
+                    x:Name="email"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="Small"
+                    TextColor="Black"
+                    Keyboard="Email"
+                    ReturnType="Next"
+                    PlaceholderColor="Gray"
+                    Placeholder="Set your email here..." />
+                <Label
+                    x:Name="emailError"
+                    FontSize="Micro"
+                    TextColor="Red"
+                    IsVisible="false"
+                    Text="Email is required" />
+            </StackLayout>
+            
+            <StackLayout>
+                <Label
+                    FontSize="Medium"
+                    FontAttributes="Italic"
+                    TextColor="Black"
+                    Text="Password" />
+                <Entry
+                    x:Name="password"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="Small"
+                    TextColor="Black"
+                    IsPassword="true"
+                    ReturnType="Done"
+                    PlaceholderColor="Gray"
+                    Placeholder="Set your password here..." />
+                <Label
+                    x:Name="passwordError"
+                    FontSize="Micro"
+                    TextColor="Red"
+                    IsVisible="false"
+                    Text="Password is required" />
+            </StackLayout>
+            
+            <Button
+                x:Name="registerbtn"
+                Margin="0, 15, 0, 0"
+                HeightRequest="40"
+                BackgroundColor="Blue"
+                FontAttributes="Bold"
+                TextColor="White"
+                Text="Register Account"
+                Clicked="HandleButtonClicked" />
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
